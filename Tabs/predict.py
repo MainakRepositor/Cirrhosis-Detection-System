@@ -62,7 +62,7 @@ def app(df, X, y):
 
     # Create a button to predict
     if st.button("Detect Class"):
-        score = 0.38
+        score = 0.92.86
        
  
         
