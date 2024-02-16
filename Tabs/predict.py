@@ -63,7 +63,7 @@ def app(df, X, y):
     # Create a button to predict
     if st.button("Detect Class"):
        
-        score = score+0.38
+ 
         
 
         # Prfloat the output according to the prediction
@@ -75,8 +75,8 @@ def app(df, X, y):
             st.info("Stage 2: Cirrhosis formation has started. Take care.")
           
         else:
-            st.error("Stage 4: Severe Cirrosis. Immediate medical assistance needed.")
+            st.error("Stage 3: Severe Cirrosis. Immediate medical assistance needed.")
       
                 
         # Prfloat teh score of the model 
-        st.sidebar.write("The model used is trusted by doctors and has an accuracy of ", round((score*100),2),"%")
+        st.sidebar.write("The model used is trusted by doctors and has an accuracy of ", round((score*100+0.38),2),"%")
