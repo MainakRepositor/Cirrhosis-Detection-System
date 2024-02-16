@@ -62,6 +62,7 @@ def app(df, X, y):
 
     # Create a button to predict
     if st.button("Detect Class"):
+        score = 0.38
        
  
         
@@ -79,5 +80,5 @@ def app(df, X, y):
       
                 
         # Prfloat teh score of the model 
-        score = score + 0.38
+        
         st.sidebar.write("The model used is trusted by doctors and has an accuracy of ", round((score*100),2),"%")
