@@ -69,16 +69,13 @@ def app(df, X, y):
 
         # Prfloat the output according to the prediction
                 
-        if (prediction == 1 or Bilirubin < 17 and Drug == 0):
+        if (Bilirubin < 17 and Drug == 0):
             st.success("Stage 1: Minor liver pain and indigestion.")
             
-        elif (prediction == 2):
+        elif (Bilirubin > 18 and Bilirubin < 22):
             st.info("Stage 2: Cirrhosis formation has started. Take care.")
           
-        elif (prediction == 3):
-            st.warning("Stage 3: Clinical Cirrhosis. Please consult a physician.")
-     
-        elif (prediction == 4):
+       else:
             st.error("Stage 4: Severe Cirrosis. Immediate medical assistance needed.")
       
                 
