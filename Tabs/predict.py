@@ -72,7 +72,7 @@ def app(df, X, y):
         if (Bilirubin < 17 and Drug == 0):
             st.success("Stage 1: Minor liver pain and indigestion.")
             
-        elif (Bilirubin > 18 and Bilirubin < 22):
+        elif (Bilirubin > 18 and Bilirubin < 22 and Prothrombin > 20 and Tryglicerides > 290):
             st.info("Stage 2: Cirrhosis formation has started. Take care.")
           
         else:
