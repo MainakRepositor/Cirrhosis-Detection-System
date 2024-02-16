@@ -58,7 +58,7 @@ def app(df, X, y):
 
     # Create a list to store all the features
     features = [N_Days,Status,Drug,RBC,Sex,Ascites,Hepatomegal1,Spiders,Edema,Bilirubin,Cholesterol,Albumin,Copper,Alk_Phos,SGOT,Tryglicerides,Platelets,Prothrombin]
-    array.flags.writeable = True
+
 
     # Create a button to predict
     if st.button("Detect Class"):
