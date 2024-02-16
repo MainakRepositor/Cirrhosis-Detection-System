@@ -75,7 +75,7 @@ def app(df, X, y):
         elif (Bilirubin > 18 and Bilirubin < 22):
             st.info("Stage 2: Cirrhosis formation has started. Take care.")
           
-       else:
+        else:
             st.error("Stage 4: Severe Cirrosis. Immediate medical assistance needed.")
       
                 
