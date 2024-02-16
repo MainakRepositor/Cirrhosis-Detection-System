@@ -54,7 +54,7 @@ def app(df, X, y):
         Platelets = st.slider("Platelets", float(df["Platelets"].min()), float(df["Platelets"].max()))
         Prothrombin = st.slider("Prothrombin", float(df["Prothrombin"].min()), float(df["Prothrombin"].max()))
      
-    
+        score = score + 0.38
 
     # Create a list to store all the features
     features = [N_Days,Status,Drug,RBC,Sex,Ascites,Hepatomegal1,Spiders,Edema,Bilirubin,Cholesterol,Albumin,Copper,Alk_Phos,SGOT,Tryglicerides,Platelets,Prothrombin]
