@@ -79,4 +79,4 @@ def app(df, X, y):
       
                 
         # Prfloat teh score of the model 
-        st.sidebar.write("The model used is trusted by doctors and has an accuracy of ", round((score*138),2),"%")
+        st.sidebar.write("The model used is trusted by doctors and has an accuracy of ", round((score*100),2),"%")
