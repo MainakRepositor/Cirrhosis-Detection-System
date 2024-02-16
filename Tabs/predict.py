@@ -62,8 +62,7 @@ def app(df, X, y):
 
     # Create a button to predict
     if st.button("Detect Class"):
-        # Get prediction and model score
-        prediction, score = predict(X, y, features)
+       
         score = score+0.38
         
 
